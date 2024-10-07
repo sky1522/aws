@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강수 관련 기상 자료</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>경기도 실시간 강수 정보</h1>
+    <p id="timeInfo">관측시각: </p>
+    <table id="weatherTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0, 'text')">시·군</th>
+                <th onclick="sortTable(1, 'text')">지점명</th>
+                <th onclick="sortRainDetection()">강수감지</th>
+                <th onclick="sortTable(3, 'num')">15분</th>
+                <th onclick="sortTable(4, 'num')">60분</th>
+                <th onclick="sortTable(5, 'num')">3H</th>
+                <th onclick="sortTable(6, 'num')">6H</th>
+                <th onclick="sortTable(7, 'num')">12H</th>
+                <th onclick="sortTable(8, 'num')">1Day</th>
+                <!--
+                <th onclick="sortTable(9, 'num')">기온(℃)</th>
+                <th onclick="sortTable(10, 'num')">습도(%)</th>
+                <th onclick="sortTableNumerical('풍향')">풍향(˚)</th>
+                <th onclick="sortTable(12, 'num')">평균풍속(m/s)</th>
+                <th onclick="sortTable(13, 'num')">순간풍속(m/s)</th> -->
+            </tr>
+        </thead>
+        <tbody id="weatherData">
+            <!-- 데이터가 여기에 삽입됩니다 -->
+        </tbody>
+    </table>
+    <script src="scripts.js"></script>
+</body>
+</html>
